@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/lista2_mangadex\/mangadex[1:8]","start":1669851380290,"end":1669851382331,"title":"src\/test\/java\/lista2_mangadex\/mangadex[1:8] 20:36:20.290-20:36:22.331 Pegando a lista com todos os mangás"},{"id":2,"group":1,"content":"src\/test\/java\/lista2_mangadex\/mangadex[2:15]","start":1669851382338,"end":1669851383562,"title":"src\/test\/java\/lista2_mangadex\/mangadex[2:15] 20:36:22.338-20:36:23.562 Procurando por um mangá aleatório na base de dados da API"},{"id":3,"group":1,"content":"src\/test\/java\/lista2_mangadex\/mangadex[3:21]","start":1669851383569,"end":1669851384028,"title":"src\/test\/java\/lista2_mangadex\/mangadex[3:21] 20:36:23.569-20:36:24.028 Procurando por One Piece na API"},{"id":4,"group":1,"content":"src\/test\/java\/lista2_mangadex\/mangadex[4:28]","start":1669851384034,"end":1669851384702,"title":"src\/test\/java\/lista2_mangadex\/mangadex[4:28] 20:36:24.034-20:36:24.702 Procurando um mangá inexistente na API (Caso Negativo)"},{"id":5,"group":1,"content":"src\/test\/java\/lista2_mangadex\/mangadex[5:34]","start":1669851384708,"end":1669851385135,"title":"src\/test\/java\/lista2_mangadex\/mangadex[5:34] 20:36:24.708-20:36:25.135 Procurando as scans BR na API"},{"id":6,"group":1,"content":"src\/test\/java\/lista2_mangadex\/mangadex[6:40]","start":1669851385141,"end":1669851386285,"title":"src\/test\/java\/lista2_mangadex\/mangadex[6:40] 20:36:25.141-20:36:26.285 Procurando a scan do Inatel na API (Caso Negativo)"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

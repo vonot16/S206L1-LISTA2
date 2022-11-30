@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.lista2_mangadex.mangadex</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-11-30 08:36:26 p.m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Pegando a lista com todos os mangás</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>Procurando por um mangá aleatório na base de dados da API</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:21]"><span>[3:21]</span> <span>Procurando por One Piece na API</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:28]"><span>[4:28]</span> <span>Procurando um mangá inexistente na API (Caso Negativo)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:34]"><span>[5:34]</span> <span>Procurando as scans BR na API</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:40]"><span>[6:40]</span> <span>Procurando a scan do Inatel na API (Caso Negativo)</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/lista2_mangadex/mangadex.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testando API do MangaDex</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Pegando a lista com todos os mangás</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1846</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://api.mangadex.org&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:36:20.453 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json = read(&quot;json_teste.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">45</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json2 = read(&quot;json_teste2.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/manga&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1770</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">20:36:20.861 request:
+1 &gt; GET https://api.mangadex.org/manga
+1 &gt; Host: api.mangadex.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:36:22.306 response time in milliseconds: 1422
+1 &lt; 200
+1 &lt; content-type: application/json
+1 &lt; cache-control: max-age=15, public, s-maxage=2592000, stale-while-revalidate=15
+1 &lt; date: Wed, 30 Nov 2022 23:36:22 GMT
+1 &lt; x-varnish: 434762972
+1 &lt; accept-ranges: bytes
+1 &lt; via: HTTP/1.1 Varnish Edge
+1 &lt; via: HTTP/1.1 XLB-NA-2
+1 &lt; x-age-ve: 0
+1 &lt; x-cache-ve: MISS
+1 &lt; transfer-encoding: chunked
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: *
+1 &lt; vary: Origin
+1 &lt; server: MangaDex
+1 &lt; x-request-id: 6f50fad3-d342-4993-9459-6b54a8c5b8df
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains; preload
+1 &lt; expect-ct: enforce, max-age=604800
+1 &lt; alt-svc: clear
+{&quot;result&quot;:&quot;ok&quot;,&quot;total&quot;:53640,&quot;data&quot;:[{&quot;relationships&quot;:[{&quot;id&quot;:&quot;9848310e-c860-458c-98e0-85673d8df161&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;9848310e-c860-458c-98e0-85673d8df161&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;857d1a95-5c1e-48d1-bc4f-accb17be0a97&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;2&quot;,&quot;latestUploadedChapter&quot;:&quot;3f11900a-0db4-43af-ba81-ec72ffeddb2d&quot;,&quot;year&quot;:2019,&quot;description&quot;:{&quot;es-la&quot;:&quot;Contrariamente a su apariencia, Hatsuse Sakura es una idiota. Debido a su \&quot;aspecto de estudiante de honor\&quot;, es nombrada presidenta de la clase. Para cumplir con las expectativas de todos, Sakura se esfuerza al máximo, sin embargo, por alguna razón desde entonces Shinokura, de quien se rumorea que es un delincuente, comienza a acercarse a ella... El romance de dos personas incómodas.&quot;,&quot;pt-br&quot;:&quot;Ao contrário de sua aparência, Hatsuse Sakura é uma idiota. Por causa dela, \&quot;aparência de estudante de honra\&quot;, ela é nomeada presidente da classe. Para atender às expectativas de todos, Sakura se esforça ao máximo, no entanto, por algum motivo, desde então, Shinokura, que há rumores de ser um delinquente, começou a se aproximar dela? O romance de duas pessoas estranhas.&quot;,&quot;en&quot;:&quot;Contrary to her appearance, Hatsuse Sakura is an idiot. Because of her, \&quot;honor student looks,\&quot; she is appointed as the class president. To meet up to everyone&#39;s expectations, Sakura tries her hardest, however, for some reason since then Shinokura, who is rumored to be a delinquent, has been starting to approach her? The romance of two awkward people.&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Iincho to Furyou-kun&quot;},&quot;originalLanguage&quot;:&quot;ja&quot;,&quot;lastChapter&quot;:&quot;30&quot;,&quot;version&quot;:17,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Romance&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;423e2eae-a7a2-4a8b-ac03-a8351462d71d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Comedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;4d32cc48-9f00-4cca-9b5a-a839f0764984&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;School Life&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;caaa44eb-cd40-4177-b930-79d3ef2afe87&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Delinquents&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;da2d50ca-3018-4cc0-ac7a-6b7d472a29ea&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ja&quot;:&quot;いいんちょと不良くん&quot;},{&quot;zh&quot;:&quot;委員長和不良少年&quot;}],&quot;publicationDemographic&quot;:&quot;shoujo&quot;,&quot;createdAt&quot;:&quot;2022-06-21T22:48:23+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;pt-br&quot;,&quot;en&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;bw&quot;:&quot;series\/233720&quot;,&quot;mu&quot;:&quot;il0jc00&quot;,&quot;mal&quot;:&quot;147425&quot;,&quot;raw&quot;:&quot;https:\/\/comic.pixiv.net\/works\/6239&quot;,&quot;al&quot;:&quot;128064&quot;,&quot;ebj&quot;:&quot;https:\/\/ebookjapan.yahoo.co.jp\/books\/574501\/&quot;,&quot;amz&quot;:&quot;https:\/\/www.amazon.co.jp\/-\/en\/%E4%BC%8A%E7%80%AC-%E3%81%BE%E3%82%8B%E3%81%AE-ebook\/dp\/B083K2X4K9\/ref=sr_1_2?&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;completed&quot;,&quot;updatedAt&quot;:&quot;2022-10-15T20:59:32+00:00&quot;},&quot;id&quot;:&quot;76a4686c-5805-4161-b1d0-dbf19cffd2e7&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;63200b97-bbf8-4dab-8522-a158fec3afad&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;63200b97-bbf8-4dab-8522-a158fec3afad&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;a5f9d6d3-b1b9-467c-9678-a5227e3b80a8&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;&quot;,&quot;latestUploadedChapter&quot;:&quot;47c077c9-36e6-40fe-b1a2-f6c758163e52&quot;,&quot;year&quot;:2022,&quot;description&quot;:{&quot;en&quot;:&quot;Jiang He, a girl from the Tang Dynasty, traveled through a thousand years and appeared in front of Xu Qing. Fate brought together this love that spanned a thousand years. Everything the girl was familiar with has become history. Relatives, friends, and enemies have all been left behind 1,200 years ago. The boy is unreserved and leads the girl to start a new life. Pain, confusion, cheers, and laughter will remain in this new world.&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;My Wife Is From a Thousand Years Ago&quot;},&quot;originalLanguage&quot;:&quot;zh&quot;,&quot;lastChapter&quot;:&quot;&quot;,&quot;version&quot;:7,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Time Travel&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;292e862b-2d17-4062-90a2-0356caa4ae27&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Long Strip&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;3e2b8dae-350e-4ab8-a8ce-016e844b9f0d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Romance&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;423e2eae-a7a2-4a8b-ac03-a8351462d71d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Comedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;4d32cc48-9f00-4cca-9b5a-a839f0764984&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Drama&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;b9af3a63-f058-46de-a9a0-e0c13906197a&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Fantasy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;cdc58593-87dd-415e-bbc0-2ec27bf404cc&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Slice of Life&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;e5301a23-ebd9-49dd-a0cb-2add944c7fe9&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Supernatural&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;eabc5b4c-6aff-42f3-b657-3e90cbd00b75&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Full Color&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;f5ba408b-0e7a-484d-8d49-4e9125ac96de&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;zh&quot;:&quot;我家老婆来自一千年前&quot;},{&quot;zh-ro&quot;:&quot;Wojia Laopo Laizi Yiqian Nian Qian&quot;},{&quot;zh-ro&quot;:&quot;Wǒjiā Lǎopó Láizì Yīqiān Nián Qián&quot;},{&quot;vi&quot;:&quot;Vợ Tôi Từ Một Ngàn Năm Trước&quot;}],&quot;publicationDemographic&quot;:&quot;shounen&quot;,&quot;createdAt&quot;:&quot;2022-03-01T05:51:07+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;en&quot;,&quot;vi&quot;,&quot;pt-br&quot;,&quot;fr&quot;,&quot;ar&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;nu&quot;:&quot;my-wife-came-from-a-thousand-years-ago&quot;,&quot;mu&quot;:&quot;194403&quot;,&quot;raw&quot;:&quot;https:\/\/ac.qq.com\/Comic\/ComicInfo\/id\/651589&quot;,&quot;al&quot;:&quot;146267&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;ongoing&quot;,&quot;updatedAt&quot;:&quot;2022-11-07T21:20:38+00:00&quot;},&quot;id&quot;:&quot;17a56d33-9443-433a-9e0d-70459893ed8f&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;db2235a0-784f-4f11-baf4-758d8fe0980c&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;db2235a0-784f-4f11-baf4-758d8fe0980c&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;db4753e1-4e42-4f79-8a83-0cd113296252&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;17&quot;,&quot;latestUploadedChapter&quot;:&quot;9b57c134-58b6-40ca-b9d0-be6680d18da4&quot;,&quot;year&quot;:2010,&quot;description&quot;:{&quot;en&quot;:&quot;Gin no Spoon manga&#39;s story centers around Ritsu, a high school boy who, along with his younger brother Shirabe and sister Kanade, were raised by their single mother Kyoko. When their mother is hospitalized due to sickness, Ritsu begins to take care of his younger siblings and cook food for them, slowly entering the world of cooking. Things become more complicated when Ritsu finds out a shocking fact: that he is an adopted child.  \n  \n(Source: Anime News Network)&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Silver Spoon&quot;},&quot;originalLanguage&quot;:&quot;ja&quot;,&quot;lastChapter&quot;:&quot;92&quot;,&quot;version&quot;:5,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Drama&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;b9af3a63-f058-46de-a9a0-e0c13906197a&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Slice of Life&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;e5301a23-ebd9-49dd-a0cb-2add944c7fe9&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Cooking&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;ea2bc92d-1c26-4930-9b7c-d5c0dc1b6869&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ja&quot;:&quot;銀のスプーン&quot;},{&quot;ja-ro&quot;:&quot;Gin no Spoon&quot;}],&quot;publicationDemographic&quot;:&quot;josei&quot;,&quot;createdAt&quot;:&quot;2021-02-28T16:25:16+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;en&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;mu&quot;:&quot;55800&quot;,&quot;cdj&quot;:&quot;https:\/\/www.cdjapan.co.jp\/product\/NEOBK-1549949&quot;,&quot;kt&quot;:&quot;gin-no-spoon&quot;,&quot;mal&quot;:&quot;21124&quot;,&quot;al&quot;:&quot;51124&quot;,&quot;ap&quot;:&quot;gin-no-spoon&quot;,&quot;amz&quot;:&quot;https:\/\/www.amazon.co.jp\/dp\/4063760235&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;completed&quot;,&quot;updatedAt&quot;:&quot;2022-10-19T12:02:39+00:00&quot;},&quot;id&quot;:&quot;84d60997-65fc-49e1-b1a4-3fcf0390c6cb&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;3d3ec54f-2eb7-4fb7-b2eb-0372c9f1b92e&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;3d3ec54f-2eb7-4fb7-b2eb-0372c9f1b92e&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;edbd1d6b-0903-4afd-8938-e6e8d90166bb&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;&quot;,&quot;latestUploadedChapter&quot;:&quot;8dd6fad8-e88d-4682-bbab-5a83d9c1bbaf&quot;,&quot;year&quot;:2021,&quot;description&quot;:{&quot;es-la&quot;:&quot;En cierto lugar, hay dos escuelas secundarias vecinas. El instituto Chidori, una escuela masculina de mala muerte en la que se reúnen los idiotas, y el instituto femenino Kikyo, una escuela femenina bien establecida. Rintaro Tsumugi, un fuerte y tranquilo estudiante de segundo curso del instituto Chidori, conoce a Kaoruko Wakuri, una chica que llega como cliente mientras ayuda en la pastelería de su familia. Rintaro se siente cómodo pasando tiempo con Kaoruko, pero ella es alumna de las chicas de Kikyo, una escuela vecina a la que no le gusta nada el instituto Chidori. Esta es la historia de dos personas que están tan cerca y a la vez tan lejos.\n___\n- [Twitter Oficial (JA)](https:\/\/twitter.com\/kaoruhana_mp)&quot;,&quot;ja&quot;:&quot;とある場所に、隣接するふたつの高校がある。バカが集まる底辺男子校・千鳥高校と、由緒正しきお嬢様校・桔梗女子。そこに通う紬 凛太郎と、和栗薫子が出会い\u2026。\n\u201C近くて遠い\u201D二人が織りなす、鮮やかな青春彩る学園物語!!\n\nとある場所に、隣接するふたつの高校がある。バカが集まる底辺男子校・千鳥高校と、由緒正しきお嬢様校・桔梗女子。強面で物静かな千鳥高校2年・紬 凛太郎は、実家のケーキ屋の手伝い中にお客として来ていた少女・和栗薫子と出会う。薫子との時間を心地よく感じる凛太郎だったが、彼女は徹底して千鳥を嫌う桔梗女子の生徒で\u2026\u2026!?\n\n___\n- [Twitter](https:\/\/twitter.com\/kaoruhana_mp)&quot;,&quot;en&quot;:&quot;In a certain place, there are two neighboring high schools. Chidori High School, a bottom-feeder boys&#39; school where idiots gather, and Kikyo Girls&#39; School, a well-established girls&#39; school. Rintaro Tsumugi, a strong and quiet second year student at Chidori High School, meets Kaoruko Wakuri, a girl who comes as a customer while helping out at his family&#39;s cake shop. Rintaro feels comfortable spending time with Kaoruko, but she is a student at Kikyo Girls, a neighboring school that thoroughly dislikes Chidori High. This is the story of two people who are so close and yet so far apart.\n___\n- [Official Twitter (JA)](https:\/\/twitter.com\/kaoruhana_mp)&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Kaoru Hana wa Rin to Saku&quot;},&quot;originalLanguage&quot;:&quot;ja&quot;,&quot;lastChapter&quot;:&quot;&quot;,&quot;version&quot;:21,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Romance&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;423e2eae-a7a2-4a8b-ac03-a8351462d71d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Comedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;4d32cc48-9f00-4cca-9b5a-a839f0764984&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Drama&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;b9af3a63-f058-46de-a9a0-e0c13906197a&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;School Life&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;caaa44eb-cd40-4177-b930-79d3ef2afe87&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ja&quot;:&quot;薫る花は凛と咲く&quot;},{&quot;en&quot;:&quot;The Fragrant Flower Blooms With Dignity&quot;},{&quot;es-la&quot;:&quot;La fragante flor florece con dignidad&quot;},{&quot;id&quot;:&quot;Bunga Wangi nan Mekar dengan Anggun&quot;}],&quot;publicationDemographic&quot;:&quot;shounen&quot;,&quot;createdAt&quot;:&quot;2021-11-10T17:30:57+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;fr&quot;,&quot;vi&quot;,&quot;en&quot;,&quot;es-la&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;bw&quot;:&quot;series\/345527&quot;,&quot;mu&quot;:&quot;191422&quot;,&quot;kt&quot;:&quot;kaoru-hana-wa-rin-to-saku&quot;,&quot;mal&quot;:&quot;144267&quot;,&quot;raw&quot;:&quot;https:\/\/pocket.shonenmagazine.com\/episode\/3269754496548746310&quot;,&quot;al&quot;:&quot;140475&quot;,&quot;ap&quot;:&quot;kaoru-hana-wa-rin-to-saku&quot;,&quot;amz&quot;:&quot;https:\/\/www.amazon.co.jp\/gp\/product\/4065266092&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;ongoing&quot;,&quot;updatedAt&quot;:&quot;2022-11-27T13:02:55+00:00&quot;},&quot;id&quot;:&quot;418791c0-35cf-4f87-936b-acd9cddf0989&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;e2df849a-d5ef-4d80-9869-ea8a0185baeb&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;e2df849a-d5ef-4d80-9869-ea8a0185baeb&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;7b3e782b-2f5a-4f7a-87eb-6be4b396d1b6&quot;,&quot;type&quot;:&quot;cover_art&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;a07bde20-3862-4255-92a5-de60e3b38756&quot;,&quot;type&quot;:&quot;manga&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;6&quot;,&quot;latestUploadedChapter&quot;:&quot;877569d0-dc94-45ff-8565-d886aa1d8c31&quot;,&quot;year&quot;:2014,&quot;description&quot;:{&quot;ru&quot;:&quot;Мир будущего. Человеческая цивилизация достигла невероятного технологического прогресса и однажды построила себе гигантские многоуровневые города, в которых проживало огромное количество людей. Однако через какое-то время началась война, после которой человечество оказалось на грани вымирания.\nСпустя много лет в одном из таких городов мы встречаем Тито и Юри. Эти две маленькие девочки изо дня в день путешествуют на своём модифицированном Kettenkrad в поисках пропитания и ресурсов.\nДвижимые желанием забраться на самую вершину этого опустевшего города-исполина, они постоянно сталкиваются со всё новыми и новыми загадочными сооружениями, памятниками истории и культуры и даже с некоторыми другими выжившими. Что же будет ждать их в конце этой длинной дороги?&quot;,&quot;pt-br&quot;:&quot;A civilização está morta, mas Chito e Yuuri ainda estão vivas. Então elas sobem a bordo de sua amada moto Kettenkrad e calmamente vagam pelas ruínas do mundo. Dia após dia sem esperança, elas procuram a próxima refeição e acumulam combustível para seguir em frente. Mas enquanto elas estiverem juntas, até uma existência tão sombria como esta tem um ou dois raios de sol a brilhar, mesmo que estejam tomando as últimas gotas de uma sopa ou à caça de peças para seu veículo se mexer. Para duas garotas em um mundo cheio de nada, as experiências e os sentimentos que compartilham são a sua força para viver.&quot;,&quot;en&quot;:&quot;Civilization is dead, but Chito and Yuuri are still alive. So they hop aboard their beloved Kettenkrad motorbike and aimlessly wander the ruins of the world they once knew. Day after hopeless day, they look for their next meal and fuel for their ride. But as long as the two are together, even an existence as bleak as theirs has a ray or two of sunshine in it, whether they&#39;re sucking down their fill of soup or hunting for machine parts to tinker with. For two girls in a world full of nothing, the experiences and feelings the two share give them something to live for\u2026  \n  \n---\n- **Won the Seiun Award for Best Comic in 2019**&quot;,&quot;id&quot;:&quot;Peradaban tewas, tapi Chito dan Yuuri masih hidup. Jadi mereka naik sepeda motor Kettenkrad tersayang mereka dan bermondar-mandir tanpa tujuan reruntuhan dunia yang mereka dulu kenal. Hari demi hari tanpa harapan, mereka mencari makanan berikut mereka dan bensin untuk kendaraan mereka. Tapi selama mereka berdua bersama, bahkan kehidupan seguram mereka masih ada sedikit kesenangan di dalamnya, entah minum sup entah mencari bagian-bagian mesin untuk menggerumit. Untuk dua putri di dalam dunia kosong, pengalaman dan perasaan keduanya bersama ada memberi mereka alasan untuk hidup...\n\n- Pemenang Penghargaan Seiun (Nebula) Jepang dalam kategori Komik\/Manga terbaik di 2019.&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Girls&#39; Last Tour&quot;},&quot;originalLanguage&quot;:&quot;ja&quot;,&quot;lastChapter&quot;:&quot;43&quot;,&quot;version&quot;:21,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Award Winning&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;0a39b5a1-b235-4886-a747-1d05d216532d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Sci-Fi&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;256c8bd9-4904-4360-bf4f-508a76d67183&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Psychological&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;3b60b75c-a2d7-4860-ab56-05f391bb889c&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Adventure&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;87cc87cd-a395-47af-b27a-93258283bbc6&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Post-Apocalyptic&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;9467335a-1b83-4497-9231-765337a00b96&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Drama&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;b9af3a63-f058-46de-a9a0-e0c13906197a&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Slice of Life&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;e5301a23-ebd9-49dd-a0cb-2add944c7fe9&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Tragedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;f8f62932-27da-4fe4-8ee1-6779a8c5edba&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ja-ro&quot;:&quot;Shōjo Shūmatsu Ryokō&quot;},{&quot;en&quot;:&quot;Shojo Apocalypse Adventure&quot;},{&quot;ja&quot;:&quot;少女終末旅行&quot;},{&quot;ko&quot;:&quot;소녀종말여행&quot;},{&quot;ru&quot;:&quot;Девушки в последнем путешествии&quot;},{&quot;id&quot;:&quot;Perjalanan Terakhir Para Putri&quot;},{&quot;id&quot;:&quot;Wisata Gadis di Akhir Hayat&quot;}],&quot;publicationDemographic&quot;:&quot;seinen&quot;,&quot;createdAt&quot;:&quot;2018-09-10T15:42:17+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;es&quot;,&quot;ru&quot;,&quot;fa&quot;,&quot;pl&quot;,&quot;it&quot;,&quot;pt-br&quot;,&quot;en&quot;,&quot;id&quot;,&quot;es-la&quot;,&quot;de&quot;,&quot;tl&quot;,&quot;vi&quot;,&quot;fr&quot;,&quot;zh&quot;,&quot;uk&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;engtl&quot;:&quot;https:\/\/yenpress.com\/9780316470629\/girls-last-tour-vol-1\/&quot;,&quot;bw&quot;:&quot;series\/96879&quot;,&quot;mu&quot;:&quot;108708&quot;,&quot;cdj&quot;:&quot;https:\/\/www.cdjapan.co.jp\/product\/NEOBK-1905760&quot;,&quot;kt&quot;:&quot;25931&quot;,&quot;mal&quot;:&quot;72467&quot;,&quot;raw&quot;:&quot;https:\/\/kuragebunch.com\/episode\/10834108156628843815&quot;,&quot;al&quot;:&quot;85412&quot;,&quot;ebj&quot;:&quot;https:\/\/ebookjapan.yahoo.co.jp\/books\/311924\/&quot;,&quot;ap&quot;:&quot;girls-last-tour&quot;,&quot;amz&quot;:&quot;https:\/\/www.amazon.co.jp\/gp\/product\/B074BT9JYN&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;completed&quot;,&quot;updatedAt&quot;:&quot;2022-06-28T23:37:39+00:00&quot;},&quot;id&quot;:&quot;5b93fa0f-0640-49b8-974e-954b9959929b&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;d6d965f5-4021-49f0-a6f2-086fff14db1f&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;5a347d16-0b6e-4b51-8604-5515c0f5cd89&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;eb9c287f-bf41-4a11-a4f1-e40d96169e3d&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;&quot;,&quot;latestUploadedChapter&quot;:&quot;9629a530-d163-459d-9d01-8c1f403e935d&quot;,&quot;year&quot;:2020,&quot;description&quot;:{&quot;ru&quot;:&quot;История о 32 исторических женщинах, в том числе Жанне д&#39;Арк, Клеопатре, Томоэ Гозэн и Марии Антуанетте - названых «алчными ведьмами», сражающихся насмерть, ради исполнения своего желания.&quot;,&quot;uk&quot;:&quot;Тридцять дві відьми з усієї історії борються на смерть у Вальпургієву ніч, щоби виконати свої бажання. Жанна д&#39;Арк, Клеопатра, Томое Ґодзен, Марія Антуанетта та інші.&quot;,&quot;en&quot;:&quot;32 Witches throughout the history fight in a deathmatch tournament so their desire will be granted  \n  \nFrom the author of Kakegurui&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Majo Taisen - The War of Greedy Witches&quot;},&quot;originalLanguage&quot;:&quot;ja&quot;,&quot;lastChapter&quot;:&quot;&quot;,&quot;version&quot;:16,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Historical&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;33771934-028e-4cb3-8744-691e866a923e&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Monsters&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;36fd93ea-e8b8-445e-b836-358f02b3d33d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Action&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;391b0423-d847-456f-aff0-8b0cfc03066b&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Demons&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;39730448-9a5f-48a2-85b0-a70db87b1233&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Psychological&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;3b60b75c-a2d7-4860-ab56-05f391bb889c&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Martial Arts&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;799c202e-7daa-44eb-9cf7-8a3c0441531e&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Samurai&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;81183756-1453-4c81-aa9e-f6e1b63be016&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Magical Girls&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;81c836c9-914a-4eca-981a-560dad663e73&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Magic&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;a1f53773-c69a-4ce5-8cab-fffcd90b1565&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Fantasy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;cdc58593-87dd-415e-bbc0-2ec27bf404cc&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Supernatural&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;eabc5b4c-6aff-42f3-b657-3e90cbd00b75&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Tragedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;f8f62932-27da-4fe4-8ee1-6779a8c5edba&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ja-ro&quot;:&quot;Majo Taisen - 32-nin no Isai no Majo wa Koroshiau&quot;},{&quot;ru&quot;:&quot;Война Ведьм&quot;},{&quot;ja&quot;:&quot;魔女大戦 32人の異才の魔女は殺し合う&quot;},{&quot;uk&quot;:&quot;Війна відьом&quot;}],&quot;publicationDemographic&quot;:&quot;seinen&quot;,&quot;createdAt&quot;:&quot;2020-12-01T09:30:04+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;en&quot;,&quot;fr&quot;,&quot;pt-br&quot;,&quot;uk&quot;,&quot;tr&quot;,&quot;es-la&quot;,&quot;vi&quot;,&quot;ru&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;bw&quot;:&quot;series\/303258\/list&quot;,&quot;mu&quot;:&quot;172434&quot;,&quot;kt&quot;:&quot;61698&quot;,&quot;mal&quot;:&quot;130888&quot;,&quot;raw&quot;:&quot;https:\/\/comic-zenon.com\/episode\/13933686331801793409&quot;,&quot;al&quot;:&quot;124409&quot;,&quot;ap&quot;:&quot;majo-taisen&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;ongoing&quot;,&quot;updatedAt&quot;:&quot;2022-11-16T12:51:33+00:00&quot;},&quot;id&quot;:&quot;2b37189e-0bb2-4586-9757-b3fe6acd77b3&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;4f72418e-c884-4f9f-85c0-5362a6099bf7&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;43b96dbc-ac16-4718-b942-edaebeb53d5a&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;d4766cab-b2b7-4ef9-8497-e49befddf33c&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;&quot;,&quot;latestUploadedChapter&quot;:&quot;93064280-2138-4f60-9e0d-730fd0bca721&quot;,&quot;year&quot;:2022,&quot;description&quot;:{&quot;en&quot;:&quot;A world where gates open and monsters come out to play\u2014 Hyunsoo longs to enter the tower and take on the role a sa hunter. But in reality, he works as a porter and meat shield of E Class Hunters who are worse than gangsters. Moreover, he was taken advantage by this hunters to the point where he was about to meet death. As soon as he thought that he was dead, he was summoned to the tower, was revived back from the dead, and began climbing up the tower to become a hunter that he had been longing to be. Depending on how much coins one has, the tower offers them the chance to challenge it. Hyunsoo looks at the number of coins he has\u2026. [You have an infinite number of coins!] \u201CThen I\u2019ll awaken myself in the 100th floor and go home!!!\u201D Hyunsoo, who is stucked in the tower, begins his conquer!&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Stuck in the Tower&quot;},&quot;originalLanguage&quot;:&quot;ko&quot;,&quot;lastChapter&quot;:&quot;&quot;,&quot;version&quot;:4,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Action&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;391b0423-d847-456f-aff0-8b0cfc03066b&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Long Strip&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;3e2b8dae-350e-4ab8-a8ce-016e844b9f0d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Survival&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;5fff9cde-849c-4d78-aab0-0d52b2ee1d25&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Adventure&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;87cc87cd-a395-47af-b27a-93258283bbc6&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Fantasy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;cdc58593-87dd-415e-bbc0-2ec27bf404cc&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Supernatural&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;eabc5b4c-6aff-42f3-b657-3e90cbd00b75&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ko&quot;:&quot;탑에 갇혀 고인물&quot;},{&quot;ar&quot;:&quot;عالق في البرج&quot;}],&quot;publicationDemographic&quot;:null,&quot;createdAt&quot;:&quot;2022-11-09T15:44:35+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;en&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;mu&quot;:&quot;u1o8voe&quot;,&quot;raw&quot;:&quot;https:\/\/page.kakao.com\/content\/60525874&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;ongoing&quot;,&quot;updatedAt&quot;:&quot;2022-11-30T23:08:07+00:00&quot;},&quot;id&quot;:&quot;0c507bf3-4f6d-4491-8ad2-c8725e03796f&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;354f68d8-4a6c-4618-91e4-435e4120c1b5&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;1150920c-d353-4df5-b418-e280b02c3fe8&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;5086769f-b785-4afe-bcf4-fe5dcd387760&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;&quot;,&quot;latestUploadedChapter&quot;:&quot;de940431-b74f-4235-8688-3052a5cf1b55&quot;,&quot;year&quot;:2022,&quot;description&quot;:{&quot;en&quot;:&quot;She possessed a villainess who is known and hated for her evil acts in an unpopular novel. But because of her personality, it was extremely difficult for her to play the villainess role. But not for long\u2026\n\n\u201CI\u2019ll fix your dress according to your taste this instant!\u201D\n\n\u201CMy request.\u201D\n\n\u201CO-Of course! As per your request, there\u2019s only one piece available in the whole Empire.\u201D\n\nPeople around me listen to me well even if I just frown and sit still. Since I don\u2019t have to live in difficulty, I decided to just comfortably live on as a villainess.\n\n\u201CFather. Is it necessary for you to solve formulas in this slow and inefficient way?\u201D\n\nI thought it would be good to be a rich villainess, so I used all my knowledge.\n\n\u201CWhy don\u2019t you give me the honor of escorting the Princess?\u201D\n\nI have had enough of dealing with my father, so why did an unexpected character suddenly appear? What if this person disrupts my plan?&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Isn\u2019t Being A Wicked Woman Much Better?&quot;},&quot;originalLanguage&quot;:&quot;ko&quot;,&quot;lastChapter&quot;:&quot;&quot;,&quot;version&quot;:3,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Reincarnation&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;0bc90acb-ccc1-44ca-a34a-b9f3a73259d0&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Long Strip&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;3e2b8dae-350e-4ab8-a8ce-016e844b9f0d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Romance&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;423e2eae-a7a2-4a8b-ac03-a8351462d71d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Comedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;4d32cc48-9f00-4cca-9b5a-a839f0764984&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Fantasy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;cdc58593-87dd-415e-bbc0-2ec27bf404cc&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Villainess&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;d14322ac-4d6f-4e9b-afd9-629d5f4d8a41&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Full Color&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;f5ba408b-0e7a-484d-8d49-4e9125ac96de&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ko&quot;:&quot;악녀라서 편하고 좋은데요?&quot;}],&quot;publicationDemographic&quot;:&quot;shoujo&quot;,&quot;createdAt&quot;:&quot;2022-11-30T03:56:11+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;en&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;ongoing&quot;,&quot;updatedAt&quot;:&quot;2022-11-30T20:09:47+00:00&quot;},&quot;id&quot;:&quot;50e0025c-8747-4edd-987d-baabf2caeb67&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;c7f5993a-3c2e-4435-96d1-ae677d73ff53&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;c7f5993a-3c2e-4435-96d1-ae677d73ff53&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;ea31e1cc-0e05-4f44-a3ec-5a4da6914a6e&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;1&quot;,&quot;latestUploadedChapter&quot;:&quot;733d8821-692f-43f5-9289-b3d089f926ee&quot;,&quot;year&quot;:null,&quot;description&quot;:{&quot;en&quot;:&quot;An average, run of the mill office worker, Kei racked up a huge amount of debt trying to help his hostess girlfriend move away from her line of work. When his efforts fell short, he tried to end his own life... but found himself rescued from death by the proprietor of Loved Circus, a brothel for gay men. Facing the hard truth that his girlfriend lied to him, he agrees to stay and join the four employees of the circus to work off his life debt, learning about the clients, his fellow sex workers, and the goings on in Tokyo&#39;s less known nightlife.&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Loved Circus&quot;},&quot;originalLanguage&quot;:&quot;ja&quot;,&quot;lastChapter&quot;:&quot;6.5&quot;,&quot;version&quot;:4,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Comedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;4d32cc48-9f00-4cca-9b5a-a839f0764984&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Boys&#39; Love&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;5920b825-4181-4a17-beeb-9918b0ff7a30&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Drama&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;b9af3a63-f058-46de-a9a0-e0c13906197a&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Slice of Life&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;e5301a23-ebd9-49dd-a0cb-2add944c7fe9&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[],&quot;publicationDemographic&quot;:null,&quot;createdAt&quot;:&quot;2018-12-21T10:20:55+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;en&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;engtl&quot;:&quot;https:\/\/comics.inkr.com\/title\/1626-loved-circus?utm_source=mgd&quot;,&quot;mu&quot;:&quot;110603&quot;,&quot;kt&quot;:&quot;38010&quot;,&quot;mal&quot;:&quot;95931&quot;,&quot;al&quot;:&quot;87391&quot;,&quot;ebj&quot;:&quot;https:\/\/ebookjapan.yahoo.co.jp\/books\/353867\/&quot;,&quot;ap&quot;:&quot;loved-circus&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;completed&quot;,&quot;updatedAt&quot;:&quot;2022-11-08T08:13:43+00:00&quot;},&quot;id&quot;:&quot;d32ae2af-dd67-41ba-aea3-83d7eba89f3d&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;1548dd50-5e0b-414a-a0f4-d7736e7cc0bb&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;9f0d6c04-04d9-4e3a-83ca-9f25fe676c33&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;0e386339-daa1-462f-b329-903872ecbbfe&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;37bfb1c6-95cb-48ac-815e-d3a5c745ec2e&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;&quot;,&quot;latestUploadedChapter&quot;:&quot;2550a923-9101-4470-9625-c352be763b7d&quot;,&quot;year&quot;:2022,&quot;description&quot;:{&quot;pl&quot;:&quot;W Królestwie Strandeon jeden mężczyzna z każdej szlacheckiej rodziny musi służyć w Zakonie Królewskiej Winorośli, a Aristité zostaje wybrany do wypełnienia tego obowiązku dla Domu Tezeusza. \n\nPewnego dnia, gdy zakon wykonuje misję, wiedźma rzuca klątwę na Aristité, mówiąc, że straci coś ważnego. Wszyscy w zakonie myślą, że ta klątwa zmienia Aristité w kobietę, ale nie wiedzą, że Aristité, której prawdziwe imię to Ariel, była kobietą od samego początku. Jedyne, co zrobiła klątwa, to zabranie jej specjalnego lekarstwa, które zmienia jej głos. \n\nZ pomocą przyjaciół i kuzyna Ariel stara się chronić swój sekret, ale ktoś z zakonu wydaje się być zdeterminowany, by ją zdemaskować i wpakować w kłopoty...&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Aristité was Blessed with a Curse&quot;},&quot;originalLanguage&quot;:&quot;ko&quot;,&quot;lastChapter&quot;:&quot;&quot;,&quot;version&quot;:9,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Historical&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;33771934-028e-4cb3-8744-691e866a923e&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Romance&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;423e2eae-a7a2-4a8b-ac03-a8351462d71d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Comedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;4d32cc48-9f00-4cca-9b5a-a839f0764984&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Crossdressing&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;9ab53f92-3eed-4e9b-903a-917c86035ee3&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Fantasy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;cdc58593-87dd-415e-bbc0-2ec27bf404cc&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Adaptation&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;f4122d1c-3b44-44d0-9936-ff7502c39ad3&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ko&quot;:&quot;저주가 저주가 아닌 게 저주&quot;}],&quot;publicationDemographic&quot;:&quot;shoujo&quot;,&quot;createdAt&quot;:&quot;2022-09-05T15:01:11+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;pl&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;engtl&quot;:&quot;https:\/\/www.tappytoon.com\/en\/comics\/aristite-was-blessed-with-a-curse&quot;,&quot;mu&quot;:&quot;rtnxt5w&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;ongoing&quot;,&quot;updatedAt&quot;:&quot;2022-09-11T18:55:50+00:00&quot;},&quot;id&quot;:&quot;dd091312-6518-481d-ad11-fa08bb53e946&quot;,&quot;type&quot;:&quot;manga&quot;}],&quot;offset&quot;:0,&quot;response&quot;:&quot;collection&quot;,&quot;limit&quot;:10}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $ contains {data: &#39;#[]&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">Procurando por um mangá aleatório na base de dados da API</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1222</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://api.mangadex.org&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:36:22.339 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json = read(&quot;json_teste.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json2 = read(&quot;json_teste2.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/manga/random&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1220</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">20:36:22.343 request:
+1 &gt; GET https://api.mangadex.org/manga/random
+1 &gt; Host: api.mangadex.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:36:23.562 response time in milliseconds: 1217
+1 &lt; 200
+1 &lt; content-type: application/json
+1 &lt; cache-control: no-cache, private
+1 &lt; date: Wed, 30 Nov 2022 23:36:23 GMT
+1 &lt; x-ratelimit-remaining: 59
+1 &lt; x-ratelimit-retry-after: 1669851383
+1 &lt; x-ratelimit-limit: 60
+1 &lt; x-varnish: 448695848
+1 &lt; accept-ranges: bytes
+1 &lt; via: HTTP/1.1 Varnish Edge
+1 &lt; via: HTTP/1.1 XLB-NA-2
+1 &lt; x-age-ve: 0
+1 &lt; x-cache-ve: MISS
+1 &lt; transfer-encoding: chunked
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: *
+1 &lt; vary: Origin
+1 &lt; server: MangaDex
+1 &lt; x-request-id: ec3860f5-9fdd-4c70-bd3a-db3724d43ff5
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains; preload
+1 &lt; expect-ct: enforce, max-age=604800
+1 &lt; alt-svc: clear
+{&quot;result&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;relationships&quot;:[{&quot;id&quot;:&quot;39dc907f-3b33-46cb-a081-5640b9c504d5&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;39dc907f-3b33-46cb-a081-5640b9c504d5&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;4d45620f-48c2-4bb4-b968-9e827dcd4273&quot;,&quot;type&quot;:&quot;cover_art&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;2&quot;,&quot;latestUploadedChapter&quot;:null,&quot;year&quot;:2005,&quot;description&quot;:{&quot;en&quot;:&quot;Collection of one-shots by author Umino Tsunami.\n\n**Volume 1**:\n1. **Tamagoyaki** (Baked Eggs, たまごやき)\n2. **Kiseki no Haru** (The vernal wonder, 奇跡の春)\n3. **Sekai no Owari ni Kimi wo Omou** (I think of You in the End of the World, 世界の終わりに君を想う)\n4. **Ryoute ni Ai wo Tsukame!** (Hold Love in both Hands!, 両手に愛をつかめ!)\n5. **Reform Tousan** (Re-form\u2014find Enjoyment in my Life, リフォーム父さん)\n\n**Volume 2**:\n1. **Shounen Ningyo** (Little Merman, 少年人魚)\n2. **2-banme ni Suki na Hito** (The Second Favorite Person, 2番目に好きなひと)\n3. **Chance wo Choudai** (The Ultra Great Operation of Love, チャンスをちょうだい)\n4. **Poolside no Ningyo Hime** (Princess Goldfish, プールサイドの人魚姫)\n5. **Juuni Yoru - Christmas no Juuni Nichi** (Twelfth Night, 十二夜\u2015クリスマスの十二日\u2015)&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;Tsunamix&quot;},&quot;originalLanguage&quot;:&quot;ja&quot;,&quot;lastChapter&quot;:&quot;10&quot;,&quot;version&quot;:5,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Thriller&quot;},&quot;description&quot;:[],&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;07251805-a27e-4d59-b488-f0bfbec15168&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Romance&quot;},&quot;description&quot;:[],&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;423e2eae-a7a2-4a8b-ac03-a8351462d71d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Comedy&quot;},&quot;description&quot;:[],&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;4d32cc48-9f00-4cca-9b5a-a839f0764984&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Anthology&quot;},&quot;description&quot;:[],&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;51d83883-4103-437c-b4b1-731cb73d786c&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Fantasy&quot;},&quot;description&quot;:[],&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;cdc58593-87dd-415e-bbc0-2ec27bf404cc&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Slice of Life&quot;},&quot;description&quot;:[],&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;e5301a23-ebd9-49dd-a0cb-2add944c7fe9&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Supernatural&quot;},&quot;description&quot;:[],&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;eabc5b4c-6aff-42f3-b657-3e90cbd00b75&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ja-ro&quot;:&quot;Umino Tsunami Sakushinshuu&quot;},{&quot;ja&quot;:&quot;ツナミックス&quot;},{&quot;ja&quot;:&quot;海野つなみ作品集&quot;},{&quot;zh&quot;:&quot;荷包蛋女孩&quot;},{&quot;ja-ro&quot;:&quot;Tamagoyaki&quot;},{&quot;ja-ro&quot;:&quot;Kiseki no Haru&quot;},{&quot;ja-ro&quot;:&quot;Sekai no Owari ni Kimi wo Omou&quot;},{&quot;ja-ro&quot;:&quot;Ryoute ni Ai wo Tsukame!&quot;},{&quot;ja-ro&quot;:&quot;Reform Tousan&quot;},{&quot;ja-ro&quot;:&quot;Shounen Ningyo&quot;},{&quot;ja-ro&quot;:&quot;2-banme ni Suki na Hito&quot;},{&quot;ja-ro&quot;:&quot;Chance wo Choudai&quot;},{&quot;ja-ro&quot;:&quot;Poolside no Ningyo Hime&quot;},{&quot;ja-ro&quot;:&quot;Juuni Yoru - Christmas no Juuni Nichi&quot;},{&quot;ja&quot;:&quot;たまごやき&quot;},{&quot;ja&quot;:&quot;奇跡の春&quot;},{&quot;ja&quot;:&quot;世界の終わりに君を想う&quot;},{&quot;ja&quot;:&quot;両手に愛をつかめ!&quot;},{&quot;ja&quot;:&quot;リフォーム父さん&quot;},{&quot;ja&quot;:&quot;少年人魚&quot;},{&quot;ja&quot;:&quot;2番目に好きなひと&quot;},{&quot;ja&quot;:&quot;チャンスをちょうだい&quot;},{&quot;ja&quot;:&quot;プールサイドの人魚姫&quot;},{&quot;ja&quot;:&quot;十二夜\u2015クリスマスの十二日\u2015&quot;},{&quot;en&quot;:&quot;Baked Eggs&quot;},{&quot;en&quot;:&quot;The vernal wonder&quot;},{&quot;en&quot;:&quot;I think of You in the End of the World&quot;},{&quot;en&quot;:&quot;Hold Love in both Hands!&quot;},{&quot;en&quot;:&quot;Re-form\u2014find Enjoyment in my Life&quot;},{&quot;en&quot;:&quot;Little Merman&quot;},{&quot;en&quot;:&quot;The Second Favorite Person&quot;},{&quot;en&quot;:&quot;The Ultra Great Operation of Love&quot;},{&quot;en&quot;:&quot;Princess Goldfish&quot;},{&quot;en&quot;:&quot;Twelfth Night&quot;}],&quot;publicationDemographic&quot;:&quot;shoujo&quot;,&quot;createdAt&quot;:&quot;2022-03-18T14:33:38+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;bw&quot;:&quot;series\/15548\/list\/&quot;,&quot;mu&quot;:&quot;27732&quot;,&quot;ebj&quot;:&quot;https:\/\/ebookjapan.yahoo.co.jp\/books\/230385\/&quot;,&quot;amz&quot;:&quot;https:\/\/www.amazon.co.jp\/dp\/B074CHKDPM&quot;},&quot;contentRating&quot;:&quot;safe&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;completed&quot;,&quot;updatedAt&quot;:&quot;2022-03-18T14:51:54+00:00&quot;},&quot;id&quot;:&quot;05769417-c88c-4a76-bb8c-8adb0a624444&quot;,&quot;type&quot;:&quot;manga&quot;},&quot;response&quot;:&quot;entity&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:21]</span>
+                <span class="scenario-name">Procurando por One Piece na API</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>457</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://api.mangadex.org&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:36:23.570 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json = read(&quot;json_teste.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json2 = read(&quot;json_teste2.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/manga/a1c7c817-4e59-43b7-9365-09675a149a6f&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">454</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">20:36:23.574 request:
+1 &gt; GET https://api.mangadex.org/manga/a1c7c817-4e59-43b7-9365-09675a149a6f
+1 &gt; Host: api.mangadex.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:36:24.026 response time in milliseconds: 450
+1 &lt; 200
+1 &lt; content-type: application/json
+1 &lt; cache-control: max-age=15, public, s-maxage=2592000, stale-while-revalidate=15
+1 &lt; date: Wed, 30 Nov 2022 21:09:28 GMT
+1 &lt; x-varnish: 444998118 429119360
+1 &lt; accept-ranges: bytes
+1 &lt; via: HTTP/1.1 Varnish Edge
+1 &lt; via: HTTP/1.1 XLB-NA-2
+1 &lt; x-age-ve: 8815
+1 &lt; x-cache-ve: HIT
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: *
+1 &lt; vary: Origin
+1 &lt; server: MangaDex
+1 &lt; x-request-id: 5c06cbfa-f8f7-4359-950d-1ad4c0fc65f6
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains; preload
+1 &lt; expect-ct: enforce, max-age=604800
+1 &lt; alt-svc: clear
+{&quot;result&quot;:&quot;ok&quot;,&quot;data&quot;:{&quot;relationships&quot;:[{&quot;id&quot;:&quot;b6045e2c-28f4-4ce0-b4dd-b14070f2f5ae&quot;,&quot;type&quot;:&quot;author&quot;},{&quot;id&quot;:&quot;b6045e2c-28f4-4ce0-b4dd-b14070f2f5ae&quot;,&quot;type&quot;:&quot;artist&quot;},{&quot;id&quot;:&quot;ef87f8dd-919a-49b9-9336-4ebfaa593579&quot;,&quot;type&quot;:&quot;cover_art&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;13596834-6c99-4e61-a001-edfbaebe9dc5&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;17534d03-859c-47f2-8f36-0f11f8199ee5&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;2cddb9f7-8b27-4116-b0cb-1283306a7144&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;side_story&quot;,&quot;id&quot;:&quot;470ac1ec-c3dd-4dc2-9e5d-0104600ed1a5&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;side_story&quot;,&quot;id&quot;:&quot;487f1f04-75f3-4a2e-a4af-76e615e32585&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;5d5eab11-c930-4d2f-a669-d9108b4ac7a0&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;6755aa01-76e2-4e33-b21b-cf9b80165de8&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;6c6236b0-0fd7-4926-8a1a-cc346a6627e3&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;6db2750d-dd46-4f1b-b607-8700a7536e1e&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;77b55397-d621-462f-8c04-1f450b83fc0d&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;81985e43-5363-44cc-b709-828599da5012&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;826b1ca7-86c7-4d5f-8d20-b0c334bff310&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;8c6ef855-b506-431b-8a69-a254bbea46cd&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;8ee0dcd7-a898-49e6-b083-7aa42ebe1bb0&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;8f8c4f0e-93f5-433e-ba13-017746b485ec&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;9154c1da-feef-49d1-b903-e07531a005f2&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;9175d86a-0646-41df-9ed7-97b8a36429ca&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;9b33e6ab-2970-426a-b749-e10d5271fe51&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;a0b49136-9f4d-46d4-b5dd-d5393e015009&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;alternate_version&quot;,&quot;id&quot;:&quot;a1345e69-ac04-41d0-bf10-fceadc68d7e1&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;a1345e69-ac04-41d0-bf10-fceadc68d7e1&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;a14176d9-9832-43d2-b98a-f16fa4e82021&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;colored&quot;,&quot;id&quot;:&quot;a2c1d849-af05-4bbc-b2a7-866ebb10331f&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;a5ab3b40-3fc0-40f4-9b45-afb14f90325f&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;a6ebb201-97e2-4b96-b6b9-46b9ec0d354e&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;alternate_version&quot;,&quot;id&quot;:&quot;a8dcc878-deb2-4332-b8b4-ecf9416fe248&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;a8dcc878-deb2-4332-b8b4-ecf9416fe248&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;aab94c3a-34b4-4051-84ff-7ba9cbab0da8&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;b119f734-f807-45aa-8762-1694c3ffcad4&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;b70113a5-32a3-44e8-a28f-0e88392808ba&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;ca04d204-875f-48bb-8eec-622b7ecd5cfa&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;cc76b063-dc2f-446f-b3eb-be3b56c1b8d6&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;d3ee87c2-40d5-4ab7-9167-430eb83d3710&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;da7f638f-8f76-402b-a0a9-75539c085436&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;db826054-0c1d-4a88-b70e-a65ce5970403&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;f4ae29d1-8f3c-4ab2-af1d-a416337fafc3&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;doujinshi&quot;,&quot;id&quot;:&quot;f71e01a5-3f81-48b9-8fc6-4960878101fa&quot;,&quot;type&quot;:&quot;manga&quot;},{&quot;related&quot;:&quot;spin_off&quot;,&quot;id&quot;:&quot;fcb5111f-be88-4f5a-b456-22135f3eda49&quot;,&quot;type&quot;:&quot;manga&quot;}],&quot;attributes&quot;:{&quot;lastVolume&quot;:&quot;&quot;,&quot;latestUploadedChapter&quot;:&quot;b7542569-f2fb-4257-bfd8-f2a4884dd218&quot;,&quot;year&quot;:1997,&quot;description&quot;:{&quot;es-la&quot;:&quot;Hace veintidós años, el legendario pirata, Gold D. Roger fue ejecutado. Sus últimas palabras fueron que su tesoro conocido como \&quot;One Piece\&quot; estaba escondido en algún lugar dentro del vasto océano conocido como Grand Line. Esto dio inicio a la Era de los Piratas. Ahora, Monkey D. Luffy, un joven que, inspirado por su ídolo de la infancia emprende su viaje buscando el One Piece y convertirse en el Rey de los Piratas.&quot;,&quot;ru&quot;:&quot;Последние слова, произнесённые Королем Пиратов Гол Д. Роджером перед казнью, вдохновили многих выйти в море: «Мои сокровища? Я завещаю их тому, кто сможет их найти. Ищите! Я все оставил в одном месте!». Лишённые сна и покоя люди ринулись на Гранд Лайн, самое опасное место в мире. Так началась великая эра пиратов\u2026 Но с каждым годом романтиков становилось все меньше, их постепенно вытесняли прагматичные пираты-разбойники, которым награбленное добро было куда ближе, чем какие-то «никчёмные мечты». Но вот, одним прекрасным днем, семнадцатилетний Монки Д. Луффи исполнил заветную мечту детства - отправился в море. Его цель \u2014 ни много, ни мало стать новым Королём Пиратов. За достаточно короткий срок юному капитану удаётся собрать команду, состоящую из не менее амбициозных искателей приключений. И пусть ими движут совершенно разные устремления, главное, этим ребятам важны не столько деньги и слава, сколько куда более ценное \u2013 принципы и верность друзьям. И ещё \u2013 служение Мечте. Что же, пока по Гранд Лайн плавают такие люди, Великая Эра Пиратов всегда будет с нами!&quot;,&quot;uk&quot;:&quot;Король піратів Ґолд Роджер буде страчений Світовим урядом. Прямо перед смертю він підтвердив існування великого скарбу «Ван Піс», який знаходиться десь на величезному морі Ґранд Лайн. Як тільки Роджер сказав, що будь-хто гідний досягти Ван Пісу може забрати його собі, його стратили, і почалася Велика ера піратів.\r\n\r\nДвадцять два роки потому, молодий хлопець на ім\u2019я Монкі Д. Луффі готовий почати свою пригоду по пошуку Ван Пісу та здобуванню титулу Короля піратів. Маючи при собі солом\u2019яну шапку, невеличкий човен та еластичне тіло, він вирушає у неймовірну подорож, щоб зібрати собі команду та хороший корабель, який зможе пронести їх через весь Ґранд Лайн, щоб стати найвеличнішими в усіх морях.&quot;,&quot;pt-br&quot;:&quot;One Piece começa quando Gol D. Roger, o Rei Dos Piratas que possuiu tudo nesse mundo, antes de ser executado, diz que escondeu o seu tesouro em algum lugar da Grand Line, um oceano extremamente perigoso. Desde então muitos piratas se aventuram pela Grand Line para tentar encontrar o tesouro chamado One Piece. Um deles é Monkey D. Luffy, o garoto que, acidentalmente, comeu uma das Akuma No Mi, a Gomu Gomu No Mi (Fruta da Borracha), e agora ele pode esticar seu corpo como se fosse uma borracha. A jornada dele começa atrás de companheiros e um barco, que ele vai conseguindo pouco a pouco, pois tem um objetivo: Ser o Rei Dos Piratas!!&quot;,&quot;en&quot;:&quot;Gol D. Roger, a man referred to as the \&quot;Pirate King,\&quot; is set to be executed by the World Government. But just before his demise, he confirms the existence of a great treasure, One Piece, located somewhere within the vast ocean known as the Grand Line. Announcing that One Piece can be claimed by anyone worthy enough to reach it, the Pirate King is executed and the Great Age of Pirates begins.  \n  \nTwenty-two years later, a young man by the name of Monkey D. Luffy is ready to embark on his own adventure, searching for One Piece and striving to become the new Pirate King. Armed with just a straw hat, a small boat, and an elastic body, he sets out on a fantastic journey to gather his own crew and a worthy ship that will take them across the Grand Line to claim the greatest status on the high seas.\n\n---\n\n**Note:**  \n**Because a takedown notice was sent to MangaDex from the owners of this series, One Piece is currently unavailable to be viewed. The series can be read in its entirety at [the official Shonen Jump website,](https:\/\/www.viz.com\/shonenjump\/chapters\/one-piece) with the first and latest three chapters available at any time and the rest accessible with a Shonen Jump membership (which costs about $2 a month and can be accessed via a VPN if you are outside the US). The three most recent chapters can also be read on MangaPlus for free by clicking the chapter links below.**&quot;},&quot;title&quot;:{&quot;en&quot;:&quot;One Piece&quot;},&quot;originalLanguage&quot;:&quot;ja&quot;,&quot;lastChapter&quot;:&quot;&quot;,&quot;version&quot;:76,&quot;tags&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Award Winning&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;format&quot;},&quot;id&quot;:&quot;0a39b5a1-b235-4886-a747-1d05d216532d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Monsters&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;36fd93ea-e8b8-445e-b836-358f02b3d33d&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Action&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;391b0423-d847-456f-aff0-8b0cfc03066b&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Comedy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;4d32cc48-9f00-4cca-9b5a-a839f0764984&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Martial Arts&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;theme&quot;},&quot;id&quot;:&quot;799c202e-7daa-44eb-9cf7-8a3c0441531e&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Adventure&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;87cc87cd-a395-47af-b27a-93258283bbc6&quot;,&quot;type&quot;:&quot;tag&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;name&quot;:{&quot;en&quot;:&quot;Fantasy&quot;},&quot;description&quot;:{},&quot;version&quot;:1,&quot;group&quot;:&quot;genre&quot;},&quot;id&quot;:&quot;cdc58593-87dd-415e-bbc0-2ec27bf404cc&quot;,&quot;type&quot;:&quot;tag&quot;}],&quot;altTitles&quot;:[{&quot;ja-ro&quot;:&quot;ワンピース&quot;},{&quot;ko&quot;:&quot;원피스&quot;},{&quot;my&quot;:&quot;ဝမ်းပိစ်&quot;},{&quot;th&quot;:&quot;วันพีซ&quot;},{&quot;bn&quot;:&quot;ওয়ান পিস&quot;},{&quot;ne&quot;:&quot;वान पिस&quot;},{&quot;ne&quot;:&quot;वान् पीस&quot;},{&quot;zh&quot;:&quot;海贼王&quot;},{&quot;zh&quot;:&quot;海盗路飞&quot;},{&quot;zh&quot;:&quot;航海王&quot;},{&quot;zh-hk&quot;:&quot;海賊王&quot;},{&quot;mn&quot;:&quot;Уан Пийс&quot;},{&quot;ar&quot;:&quot;ون بيس&quot;},{&quot;ar&quot;:&quot;قطعة واحدة&quot;},{&quot;fa&quot;:&quot;وان پیس&quot;},{&quot;he&quot;:&quot;וואן פיס&quot;},{&quot;vi&quot;:&quot;Đảo Hải Tặc&quot;},{&quot;ru&quot;:&quot;One Piece. Большой куш&quot;},{&quot;ru&quot;:&quot;Ван Пис&quot;},{&quot;ms&quot;:&quot;Budak Getah&quot;},{&quot;uk&quot;:&quot;Ван Піс&quot;},{&quot;ta&quot;:&quot;ஒன் பீஸ்&quot;},{&quot;hi&quot;:&quot;वन पीसू&quot;}],&quot;publicationDemographic&quot;:&quot;shounen&quot;,&quot;createdAt&quot;:&quot;2018-01-18T19:31:27+00:00&quot;,&quot;isLocked&quot;:false,&quot;availableTranslatedLanguages&quot;:[&quot;pt-br&quot;,&quot;vi&quot;,&quot;ca&quot;,&quot;es&quot;,&quot;ru&quot;,&quot;de&quot;,&quot;en&quot;,&quot;it&quot;,&quot;es-la&quot;,&quot;he&quot;,&quot;mn&quot;,&quot;ar&quot;,&quot;uk&quot;,&quot;pl&quot;,&quot;tr&quot;,&quot;id&quot;,&quot;hi&quot;,&quot;bg&quot;,&quot;fr&quot;,&quot;cs&quot;],&quot;chapterNumbersResetOnNewVolume&quot;:false,&quot;links&quot;:{&quot;engtl&quot;:&quot;https:\/\/mangaplus.shueisha.co.jp\/titles\/100020&quot;,&quot;bw&quot;:&quot;series\/13002&quot;,&quot;mu&quot;:&quot;33&quot;,&quot;cdj&quot;:&quot;https:\/\/www.cdjapan.co.jp\/product\/NEOBK-2439974&quot;,&quot;kt&quot;:&quot;38&quot;,&quot;mal&quot;:&quot;13&quot;,&quot;raw&quot;:&quot;https:\/\/shonenjumpplus.com\/episode\/10833519556325021794&quot;,&quot;al&quot;:&quot;30013&quot;,&quot;ebj&quot;:&quot;https:\/\/ebookjapan.yahoo.co.jp\/books\/132082\/&quot;,&quot;ap&quot;:&quot;one-piece&quot;,&quot;amz&quot;:&quot;https:\/\/www.amazon.co.jp\/dp\/B07CKFRZGW&quot;},&quot;contentRating&quot;:&quot;suggestive&quot;,&quot;state&quot;:&quot;published&quot;,&quot;status&quot;:&quot;ongoing&quot;,&quot;updatedAt&quot;:&quot;2022-11-09T12:54:52+00:00&quot;},&quot;id&quot;:&quot;a1c7c817-4e59-43b7-9365-09675a149a6f&quot;,&quot;type&quot;:&quot;manga&quot;},&quot;response&quot;:&quot;entity&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data contains  {id: &#39;a1c7c817-4e59-43b7-9365-09675a149a6f&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:28]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:28]</span>
+                <span class="scenario-name">Procurando um mangá inexistente na API (Caso Negativo)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>667</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:28]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://api.mangadex.org&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:36:24.035 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json = read(&quot;json_teste.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:28]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json2 = read(&quot;json_teste2.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/manga/j&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">664</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">20:36:24.040 request:
+1 &gt; GET https://api.mangadex.org/manga/j
+1 &gt; Host: api.mangadex.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:36:24.702 response time in milliseconds: 661
+1 &lt; 404
+1 &lt; content-type: application/json
+1 &lt; cache-control: no-cache, private
+1 &lt; date: Wed, 30 Nov 2022 23:36:24 GMT
+1 &lt; x-varnish: 448433920
+1 &lt; via: HTTP/1.1 Varnish Edge
+1 &lt; via: HTTP/1.1 XLB-NA-2
+1 &lt; x-age-ve: 0
+1 &lt; x-cache-ve: MISS
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: *
+1 &lt; vary: Origin
+1 &lt; server: MangaDex
+1 &lt; x-request-id: fad37749-762c-4a94-9c4d-266a784678ef
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains; preload
+1 &lt; expect-ct: enforce, max-age=604800
+1 &lt; alt-svc: clear
+{&quot;result&quot;:&quot;error&quot;,&quot;errors&quot;:[{&quot;context&quot;:null,&quot;id&quot;:&quot;524eb5f9-8408-5783-b4fc-5b176572e923&quot;,&quot;detail&quot;:&quot;No route found for \&quot;GET https:\/\/api.mangadex.org\/manga\/j\&quot;&quot;,&quot;title&quot;:&quot;not_found_http_exception&quot;,&quot;status&quot;:404}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:34]</span>
+                <span class="scenario-name">Procurando as scans BR na API</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>427</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://api.mangadex.org&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:36:24.708 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json = read(&quot;json_teste.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json2 = read(&quot;json_teste2.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;group?focusedLanguage=pt-br&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">425</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">20:36:24.713 request:
+1 &gt; GET https://api.mangadex.org/group?focusedLanguage=pt-br
+1 &gt; Host: api.mangadex.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:36:25.135 response time in milliseconds: 421
+1 &lt; 200
+1 &lt; content-type: application/json
+1 &lt; cache-control: max-age=15, public, s-maxage=2592000, stale-while-revalidate=15
+1 &lt; date: Wed, 30 Nov 2022 23:23:25 GMT
+1 &lt; x-varnish: 446208210 449184681
+1 &lt; accept-ranges: bytes
+1 &lt; via: HTTP/1.1 Varnish Edge
+1 &lt; via: HTTP/1.1 XLB-NA-2
+1 &lt; x-age-ve: 779
+1 &lt; x-cache-ve: HIT
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: *
+1 &lt; vary: Origin
+1 &lt; server: MangaDex
+1 &lt; x-request-id: 714e718a-82ea-4e78-afce-b9719f6f279f
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains; preload
+1 &lt; expect-ct: enforce, max-age=604800
+1 &lt; alt-svc: clear
+{&quot;result&quot;:&quot;ok&quot;,&quot;total&quot;:1507,&quot;data&quot;:[{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:null,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:&quot;&quot;,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2022-03-14T00:59:52+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:null,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Saori Scan&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2022-03-14T00:59:52+00:00&quot;},&quot;id&quot;:&quot;1ae88b61-644d-49d5-89d4-2829f12fcb10&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:&quot;https:\/\/shiroyashascans.blogspot.com\/&quot;,&quot;contactEmail&quot;:&quot;shiroyashascans@gmail.com&quot;,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:&quot;Grupo inativo, foi fundido com a [Suteki Monogatari Scans](https:\/\/mangadex.org\/group\/c9cf6095-a62a-4e98-b67b-da59b0e42403) em meados de [08\/03\/2013](https:\/\/shiroyashascans.blogspot.com\/2013\/03\/aviso.html) dando origem a [Shirogatari Scans](https:\/\/mangadex.org\/group\/8430cb00-a0c5-4a05-b1ef-d344bbc09f85) &quot;,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2022-07-12T13:40:25+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:null,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Shiroyasha Scans&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2022-07-12T13:40:25+00:00&quot;},&quot;id&quot;:&quot;1b14fa4d-490d-4351-bedb-dfd25b9dd1c0&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:null,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:null,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:null,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;kuchiose&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;},&quot;id&quot;:&quot;1b4c5297-7c27-4747-b871-7b4630b64a61&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;361e7310-2bc2-4d1a-8e2d-65f9c3712681&quot;,&quot;type&quot;:&quot;leader&quot;},{&quot;id&quot;:&quot;361e7310-2bc2-4d1a-8e2d-65f9c3712681&quot;,&quot;type&quot;:&quot;member&quot;}],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:null,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:&quot;é&quot;,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:null,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Sem nome&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;},&quot;id&quot;:&quot;1b580fa2-b53b-4a55-825b-deb0a785aeb9&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:null,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:&quot;&quot;,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2022-06-10T16:38:27+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:null,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Hype Scan&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2022-06-10T16:38:27+00:00&quot;},&quot;id&quot;:&quot;1b9f5e25-0229-4fb0-81ef-f5984ada105d&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:null,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:null,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:&quot;dxExKpk&quot;,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Charlotte Scantrad&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;},&quot;id&quot;:&quot;1bab7bb7-d48e-4d94-b3c1-3b051deba4b0&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:null,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:&quot;FOUDASEE&quot;,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:&quot;wCmbase&quot;,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Elevya Scanlator&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;},&quot;id&quot;:&quot;1bc77f08-b21e-4268-936b-91837bd2fad4&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:&quot;https:\/\/fanservice.wordpress.com\/&quot;,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:null,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:null,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Fanservice Scanlations&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;},&quot;id&quot;:&quot;1bd9ef0c-bfd4-43dd-9282-09f64c3219c7&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[{&quot;id&quot;:&quot;db45a40d-6fb1-4e84-b250-7a5ec16ad789&quot;,&quot;type&quot;:&quot;leader&quot;},{&quot;id&quot;:&quot;db45a40d-6fb1-4e84-b250-7a5ec16ad789&quot;,&quot;type&quot;:&quot;member&quot;}],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:null,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:&quot;Adore o deus Yato, e sirva-o com sua inútil vida.&quot;,&quot;official&quot;:false,&quot;version&quot;:3,&quot;createdAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:null,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Yatokami Scan&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2022-09-03T21:02:25+00:00&quot;},&quot;id&quot;:&quot;1c0b1687-8f47-4de8-9aee-b2350fa41c0f&quot;,&quot;type&quot;:&quot;scanlation_group&quot;},{&quot;relationships&quot;:[],&quot;attributes&quot;:{&quot;altNames&quot;:[],&quot;website&quot;:null,&quot;contactEmail&quot;:null,&quot;mangaUpdates&quot;:null,&quot;verified&quot;:false,&quot;description&quot;:&quot;Grupo de tradução e edição de \&quot;Webtoons\&quot;, de fãs para fãs e sem fins lucrativos.&quot;,&quot;official&quot;:false,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;,&quot;twitter&quot;:null,&quot;discord&quot;:null,&quot;inactive&quot;:false,&quot;publishDelay&quot;:null,&quot;focusedLanguages&quot;:[&quot;pt-br&quot;],&quot;name&quot;:&quot;Onyx Scans&quot;,&quot;ircChannel&quot;:null,&quot;ircServer&quot;:null,&quot;locked&quot;:false,&quot;updatedAt&quot;:&quot;2021-04-19T21:45:59+00:00&quot;},&quot;id&quot;:&quot;1c57788b-103f-47c3-b38b-ca5f84f5f73c&quot;,&quot;type&quot;:&quot;scanlation_group&quot;}],&quot;offset&quot;:0,&quot;response&quot;:&quot;collection&quot;,&quot;limit&quot;:10}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:40]</span>
+                <span class="scenario-name">Procurando a scan do Inatel na API (Caso Negativo)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1143</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &quot;https://api.mangadex.org&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:36:25.142 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json = read(&quot;json_teste.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def request_json2 = read(&quot;json_teste2.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;group?name=Inatel&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">20:36:25.146 request:
+1 &gt; GET https://api.mangadex.org/group?name=Inatel
+1 &gt; Host: api.mangadex.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:36:26.259 response time in milliseconds: 1113
+1 &lt; 200
+1 &lt; content-type: application/json
+1 &lt; cache-control: no-cache, private
+1 &lt; date: Wed, 30 Nov 2022 23:36:26 GMT
+1 &lt; x-varnish: 444115853
+1 &lt; accept-ranges: bytes
+1 &lt; via: HTTP/1.1 Varnish Edge
+1 &lt; via: HTTP/1.1 XLB-NA-2
+1 &lt; x-age-ve: 0
+1 &lt; x-cache-ve: MISS
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-expose-headers: *
+1 &lt; vary: Origin
+1 &lt; server: MangaDex
+1 &lt; x-request-id: 60a929da-02b0-49a6-9bdd-3c51840af20b
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: DENY
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains; preload
+1 &lt; expect-ct: enforce, max-age=604800
+1 &lt; alt-svc: clear
+{&quot;result&quot;:&quot;ok&quot;,&quot;total&quot;:0,&quot;data&quot;:[],&quot;offset&quot;:0,&quot;response&quot;:&quot;collection&quot;,&quot;limit&quot;:10}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>response.data == [0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
