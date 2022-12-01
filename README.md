@@ -6,6 +6,7 @@
  - De o comando mvn clean install;
  - E execute o teste com o comando mvn test –Dtest=mangadexRunner;
  - Se o comando não funcionar, você pode executar via IDE o plugin do VSCODE atravez do arquivo mangadex.feature;
+ - Relatório na pasta: /target/karate-reports/karate-summary.html
 
 ## Exercicio 2
 1. Quantas suítes de testes você desenvolveu?
